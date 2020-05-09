@@ -6,7 +6,7 @@
 
 # Description
 
-# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer ranging from 2 to 8, and is required to guess the number in the matrix. Each time if they gets the number existing in the matrix, the number （may be one or more than one） will show up in the matrix. If they guesses a number not existing, their most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). When they completes all numbers in a line (it can be a row, a column or a diagonal), they wins. Then they can choose to continue or exit. If they continue, another round will start from the beginning.
+# In this program, a n*n matrix consisting of n^2 integers will be initialized. The participant does not know the matrix at the beginning. The participant will determine the 'n' by typing an integer ranging from 2 to 8, and is required to guess the number in the matrix. Each time if they gets the number existing in the matrix, the number （may be one or more than one） will show up in the matrix. If they guesses a number not existing, their most previous right guess will be eliminated(i.e. the previous right number will disapprear in the matrix). After every guess, they can opt to end the game or continue with it. When they completes all numbers in a line (it can be a row, a column or a diagonal), they wins. Then they can choose to continue or exit. If they continue, another round will start from the beginning.
 
 # Functions
 
@@ -43,7 +43,7 @@ Now, you can start to guess which integers the matrix contains, and input one of
 If your guess is correct, a screen output of "Yes", and the partly revealed matrix will appear.
 If not, you will see a "No" on screen, and a matrix with the progress by your last guess (i.e. if the guess is wrong, the game takes one step back for you).
 The matrix only shows the correctly guessed integer(s), with other integers represented by an "*".
-Then you can start your next guess, with the same output patterns above, until you get all the integers correct.
+Then you can either enter "end" to quit the game, or start your next guess by entering another integer, with the same output patterns above, until you get all the integers correct.
 After having all the correct answers, the screen will say "Congratulations! You won in x steps.", where "x" is the steps you take to complete the matrix.
 Then you will see an output asking if you want to play this again, enter "cont" or "end" to play it again or quit the game.
-The playing record (winning output) of each round will be written to the same file ("greetings.txt"), for record only and will not be printed on screen.
+The playing record (winning output) of each round will be stored to file "records.txt".
