@@ -35,6 +35,8 @@ bool if_win (int** matrix, int n, Node * & head)
 
 # Compilation and execution instructions.
 
+
+Before starting, you will see on the screen a line of greetings ("Welcome to FindNumber!"), it is from a file named "greetings.txt".
 To start the game, input a integer (n) within the range [2, 8] for the game to generate a n * n matrix with random integers 0~19 (including).
 No screen output for now.
 Now, you can start to guess which integers the matrix contains, and input one of your guesses.
@@ -44,3 +46,4 @@ The matrix only shows the correctly guessed integer(s), with other integers repr
 Then you can start your next guess, with the same output patterns above, until you get all the integers correct.
 After having all the correct answers, the screen will say "Congratulations! You won in x steps.", where "x" is the steps you take to complete the matrix.
 Then you will see an output asking if you want to play this again, enter "cont" or "end" to play it again or quit the game.
+The playing record (winning output) of each round will be written to the same file ("greetings.txt"), for record only and will not be printed on screen.
